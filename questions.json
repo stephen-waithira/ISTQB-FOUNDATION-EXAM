@@ -1,0 +1,24 @@
+[
+    {
+        "question": "What is the main purpose of regression testing?",
+        "choices": [
+            "To test new functionality",
+            "To check if changes broke existing features",
+            "To find performance bottlenecks",
+            "To check UI consistency"
+        ],
+        "answer": 1,
+        "explanation": "Regression testing ensures that existing features still work after changes."
+    },
+    {
+        "question": "Which of the following is NOT a level of testing?",
+        "choices": [
+            "Unit testing",
+            "System testing",
+            "Integration testing",
+            "Module planning"
+        ],
+        "answer": 3,
+        "explanation": null
+    }
+]
