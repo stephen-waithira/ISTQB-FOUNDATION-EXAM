@@ -1,24 +1,768 @@
 [
+  {
+    "question": "Which of the following statements describe a valid test objective?",
+    "choices": [
+      "Provide ready-made solutions to stakeholders if they lack knowledge",
+      "To provide evidence that the system under test has no remaining unfixed defects",
+      "Evaluating requirements and user stories",
+      "Use the test plan and test strategy that were successful on the previous project"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating requirements and user stories is a valid test objective as it ensures that the system is being tested against what was intended."
+  },
+  {
+    "question": "Which of the following statements correctly describes the difference between testing and debugging?",
+    "choices": [
+      "Testing reproduces the failures; Debugging eliminates the defects, which are the source of failures",
+      "Dynamic testing directly finds defects in the test object; Debugging fixes the cause",
+      "Testing checks whether the fixes resolved the problem; Debugging reproduces a failure and finds the root cause",
+      "Testing triggers failures that are caused by defects; Debugging checks whether the fixes are causing failures in other parts of the test object"
+    ],
+    "answer": 2,
+    "explanation": "Testing confirms whether fixes have resolved a problem, while debugging reproduces the failure and identifies the root cause."
+  },
+  {
+    "question": "In what way can testing be part of QC?",
+    "choices": [
+      "It ensures that requirements are detailed enough",
+      "Test results can be used to fix defects",
+      "Test results can be used to provide feedback on how well the test processes are performing",
+      "It measures the quality of software in terms of number of executed test cases"
+    ],
+    "answer": 1,
+    "explanation": "Test results can be used to fix defects, making testing an integral part of quality control."
+  },
+  {
+    "question": "Which of the following correctly describes the accepting invalid inputs?",
+    "choices": [
+      "The root cause",
+      "A failure",
+      "An error",
+      "A defect"
+    ],
+    "answer": 1,
+    "explanation": "Accepting invalid inputs is a failure because the system is not meeting its expected behavior."
+  },
+  {
+    "question": "Which of the following is a testing contribution to success that BEST matches this situation?",
+    "choices": [
+      "Validating whether the test object is complete and works as expected by the stakeholders and ensuring that users needs are considered throughout the SDLC",
+      "Providing information to stakeholders to allow them to make informed decisions and ensuring required coverage of a test object",
+      "Verifying whether specified requirements have been fulfilled and verifying that a test object complies with contractual requirements"
+    ],
+    "answer": 1,
+    "explanation": "Providing stakeholders with information to make informed decisions and ensuring coverage directly supports project success."
+  },
+  {
+    "question": "Which of the following statements is true?",
+    "choices": [
+      "The root cause is the 'X' cross icon on the designs given to the developer; the fault is access of users under 16 years to the content of the website",
+      "The root cause is the conflicting requirements are given to the developer; the defect is the access of users under 16 years to the content of the website",
+      "The root cause is the conflicting requirements are given to the developer; the defect is the 'X' cross icon on the designs given to the developer"
+    ],
+    "answer": 2,
+    "explanation": "Conflicting requirements in the design were the root cause, while the 'X' button in the modal window was the defect that led to underage users accessing the website."
+  },
+  {
+    "question": "Which of the following options shows an example of test activities that contribute to success?",
+    "choices": [
+      "Testers can verify that the system is defect-free before shipping it to production",
+      "Testers create a competitive environment with developers which improves the quality of code",
+      "Testers evaluate the quality of a test object which contributes to decisions to move to the next stage of the SDLC",
+      "Testers identify harmful processes on the project and offer solutions for them at retrospective meetings"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating the quality of the test object supports informed decisions about advancing to the next SDLC stage."
+  },
+  {
+    "question": "In what way can testing be part of QA?",
+    "choices": [
+      "It ensures that requirements are detailed enough",
+      "Test results can be used to provide feedback on how well the test processes are performing",
+      "It ensures that standards in the organization are followed",
+      "Test results can be used to fix defects"
+    ],
+    "answer": 1,
+    "explanation": "Testing supports QA by providing feedback on process performance rather than only finding defects."
+  },
+  {
+    "question": "Which of the following is a testing contribution to success that BEST matches this situation?",
+    "choices": [
+      "Ensuring that the test object is complete and works as expected by the stakeholders",
+      "Reducing the level of risk of inadequate software quality",
+      "Providing information to stakeholders to allow them to make informed decisions",
+      "Verifying that a test object complies with contractual, legal, and regulatory requirements",
+      "Triggering failures and finding defects"
+    ],
+    "answer": 2,
+    "explanation": "Verifying compliance with contractual, legal, and regulatory requirements ensures the system meets necessary standards."
+  },
+  {
+    "question": "Which of the following is true?",
+    "choices": [
+      "QC is a preventive approach QA is a corrective approach",
+      "In QA test results are used to fix defects, while in QC test results provide feedback on how well the test processes are performing",
+      "QC applies to both the development and testing processes",
+      "In QC test results are used to fix defects, while in QA test results provide feedback on how well the test processes are performing"
+    ],
+    "answer": 3,
+    "explanation": "QC focuses on defect fixing, while QA ensures processes are effective through feedback from test results."
+  },
+  {
+    "question": "Which of the following statements is true?",
+    "choices": [
+      "The error is the wrong version of the code on the production environment; the failure is the sorting and filtering features malfunctioning",
+      "The error is the deployment of the wrong version of the code by the DevOps team; the defect is the sorting and filtering features malfunctioning",
+      "The root cause is the changing naming convention without informing the rest of the team; the defect is the wrong version of the code on the production environment",
+      "The mistake is the changing naming convention without informing the rest of the team; the defect is the sorting and filtering features malfunctioning"
+    ],
+    "answer": 2,
+    "explanation": "The fundamental issue was a change in naming convention without proper communication, leading to deployment of the wrong code and malfunctioning features."
+  },
+  {
+    "question": "Which is most likely a failure?",
+    "choices": [
+      "One source code file included in the build was the wrong version",
+      "The wrong input variables are configured for the computation algorithm",
+      "The developer misinterpreted the computational requirement for the algorithm"
+    ],
+    "answer": 0,
+    "explanation": "A failure is when the software does not perform as expected; crashing when a user selects an option fits this definition."
+  },
+  {
+    "question": "Which of the following statements is true?",
+    "choices": [
+      "The root cause is the invalid SQL query, and the fault is insufficient testing by the customer",
+      "The error is the inaccurate search results, and the defect is the invalid SQL query",
+      "The defect is the invalid SQL query, and the root cause is insufficient testing by the customer",
+      "The defect is the inaccurate search results on the website, and the mistake is insufficient testing by the customer"
+    ],
+    "answer": 2,
+    "explanation": "The invalid SQL query was the defect, caused by insufficient testing before release."
+  },
+  {
+    "question": "Which of the following best defines 'quality assurance' in software testing?",
+    "choices": [
+      "Testing software to find bugs",
+      "Ensuring that the software development process adheres to defined standards and procedures",
+      "Fixing defects in the software",
+      "Verifying software functionality against user requirements"
+    ],
+    "answer": 1,
+    "explanation": "Quality assurance is a process-oriented approach ensuring that software development follows defined standards and procedures."
+  },
+  {
+    "choices": [
+      "Failing at the script at a specific step is a defect",
+      "Failing at the script at a specific step is an error",
+      "A synchronization wait time issue in the code is a defect",
+      "A synchronization wait time issue in the code is not a root cause"
+    ],
+    "answer": 2,
+    "explanation": "A synchronization wait time issue is a defect because it prevents the system from meeting requirements."
+  },
+  {
+    "question": "When a developer accidentally introduces a syntax mistake in the code during programming, what does this syntax error exemplify?",
+    "choices": [
+      "Defect",
+      "Error",
+      "Failure",
+      "Root Cause"
+    ],
+    "answer": 0,
+    "explanation": "A syntax mistake in code is a defect because it violates the specification."
+  },
+  {
+    "question": "Which of the following is NOT a way that testing contributes to the success of a project?",
+    "choices": [
+      "Testers play a crucial role in indirectly representing users’ perspectives, ensuring that software meets their needs and preferences",
+      "Testers ascertain the satisfaction of user needs by rejecting and preventing releases if the quality of the test object does not meet the prescribed criteria",
+      "The measures obtained from testing are used in project management activities, aiding in decisions to progress to the next SDLC stage",
+      "Identifying defects early on saves resources compared to fixing them after development"
+    ],
+    "answer": 1,
+    "explanation": "While testers provide feedback, this exact statement is not aligned with the standard contribution defined in the syllabus."
+  },
+  {
+    "question": "Why is it important to analyze the root cause of failures?",
+    "choices": [
+      "To understand the specific steps to reproduce the failure",
+      "To identify the exact defect that caused the failure",
+      "To prevent similar failures from occurring in the future",
+      "To assign blame to the development team responsible for the failure"
+    ],
+    "answer": 2,
+    "explanation": "Root cause analysis helps prevent similar issues from recurring."
+  },
+  {
+    "question": "What differentiates an error from a defect?",
+    "choices": [
+      "Errors are intentional, while defects are unintentional",
+      "Errors occur during testing, while defects exist in the software",
+      "Errors are human mistakes, while defects are the consequences of those mistakes",
+      "Errors are always detected, while defects might go unnoticed"
+    ],
+    "answer": 2,
+    "explanation": "An error is a human action that produces incorrect results, while a defect is the result of that mistake."
+  },
+  {
+    "question": "Which general testing principles(1-3) are characterized by the descriptions(A-F) below? 1. Testing shows the presence, not the absence of defects 2. Absence-of-defects fallacy 3. Defects cluster together A. This testing principle emphasizes more than others the importance of validation, just not verification B. If many defects were found to testers, the end users will be satisfied because the system will be stable C. Testing can show that defects are present in the test object, but cannot prove that there are no defects D. The tester with the help of confirmation testing can show that defects haven’t been introduced or uncovered in unchanged areas of the software E. This principle is an illustration of the Pareto principle F. Defects always have a pair, once you find one always look for another one.",
+    "choices": [
+      "1-A, 2-B, 3-E",
+      "1-B, 2-A, 3-F",
+      "1-C, 2-A, 3-E",
+      "1-B, 2-C, 3-E"
+    ],
+    "answer": 2,
+    "explanation": "1-C aligns with 'Testing shows the presence, not the absence of defects'; 2-A fits 'Absence-of-defects fallacy'; and 3-E corresponds to 'Defects cluster together'."
+  },
+  {
+    "question": "As a result of risk analysis, more testing is being directed to those areas of the system under test where initial testing found more defects than average. Which of the following testing principles is being applied?",
+    "choices": [
+      "Tests wear out",
+      "Testing is context dependent",
+      "Absence-of-defects fallacy",
+      "Defects cluster together"
+    ],
+    "answer": 3,
+    "explanation": "When clusters of defects are found, testing effort is focused on those areas; this is the 'Defects cluster together' principle."
+  },
+  {
+    "question": "Mr. Test has been testing software applications on mobile devices for a period of 5 years. He has a wealth of experience in testing mobile applications and achieves better results in shorter time than others. Over several months, Mr. Test did not modify the existing automated test cases and did not create any new test cases. This leads to fewer and fewer defects being found by executing the tests. What principle of testing did Mr. Test not observe?",
+    "choices": [
+      "Testing depends on the environment",
+      "Exhaustive testing is impossible",
+      "Repeating of same tests will not find new defects",
+      "Defects cluster together"
+    ],
+    "answer": 2,
+    "explanation": "Repeating the same tests eventually stops finding new defects; new or updated tests are needed to continue uncovering issues."
+  },
+  {
+    "question": "Which of the statements below is the best assessment of how the Testing principles apply across the test life cycle?",
+    "choices": [
+      "Testing principles only affect the planning and test analysis activities",
+      "Testing principles only affect the design and test implementation activities",
+      "Testing principles only affect the planning, test analysis and the test design test implementation activities",
+      "Testing principles affect activities throughout the test life cycle"
+    ],
+    "answer": 3,
+    "explanation": "Testing principles guide the entire test life cycle, from planning through execution and closure."
+  },
+  {
+    "question": "Which of the following definitions BEST describes an exhaustive testing approach?",
+    "choices": [
+      "A test approach in which the test suite comprises all combinations of output values and preconditions",
+      "A test approach in which the test suite comprises all combinations of input values and preconditions",
+      "A test approach in which the test suite comprises all combinations of input values and output values",
+      "A test approach in which the test suite comprises all combinations of preconditions and postconditions"
+    ],
+    "answer": 1,
+    "explanation": "According to the ISTQB Glossary, exhaustive testing is a test approach in which the test suite comprises all combinations of input values and preconditions. Synonyms include complete testing."
+  },
+  {
+    "question": "A product owner says that your role as a tester on an Agile team is to catch all the bugs before the end of each iteration. Which of the following is a testing principle that could be used to respond to this (false) statement?",
+    "choices": [
+      "Defect clustering",
+      "Testing shows the presence of defects",
+      "Absence of error fallacy",
+      "Root cause analysis"
+    ],
+    "answer": 1,
+    "explanation": "Testing can show the presence of defects but cannot prove their absence. The impossibility of exhaustive testing makes it impossible to catch all the bugs."
+  },
+  {
+    "question": "Which general testing principles(1-3) are characterized by the descriptions(A-F) below? 1. Exhaustive testing is impossible 2. Testing is context dependent 3. Early testing saves time and money A. There is no single universally applicable approach to testing. B. The cost of quality will be reduced since fewer failures will occur later in the SDLC. C. The more defects found in the later stages of SDLS, the better the testers performed their job. D. Test techniques, test case prioritization, and risk-based testing, should be used to focus test efforts to overcome challenges of this principle. E. Regardless of the type and stage of the project, testers should always try to automate as many test cases as possible. F. All lines of code cannot be tested, so the tester should write only those tests that cover the largest number of lines of code.",
+    "choices": [
+      "1-F, 2-E, 3-C",
+      "1-D, 2-A, 3-B",
+      "1-D, 2-E, 3-F",
+      "1-A, 2-D, 3-B"
+    ],
+    "answer": 1,
+    "explanation": "1-D aligns with 'Exhaustive testing is impossible'; 2-A matches 'Testing is context dependent'; 3-B fits 'Early testing saves time and money'."
+  },
+  {
+    "question": "Consider the following definition(s)-(1-6) and match the term(A-C) with the definition(1-6): 1. Activities focused on providing confidence that quality requirements will be fulfilled. 2. The process consisting of all lifecycle activities, both static and dynamic, concerned with planning, preparation and evaluation of a component or system and related work products to determine that they satisfy specified requirements, to demonstrate that they are fit for purpose and to detect defects. 3. Confirmation by examination and through provision of objective evidence that the requirements for a specific intended use or application have been fulfilled. 4. The process of establishing and directing a quality policy, quality objectives, quality planning, quality control, quality assurance, and quality improvement for an organization. 5. Activities designed to evaluate the quality of a component or system. 6. Confirmation by examination and through provision of objective evidence that specified requirements have been fulfilled. A. Testing B. QA C. QC",
+    "choices": [
+      "2-A, 3-B, 6-C",
+      "2-A, 3-C, 6-B",
+      "1-B, 2-A, 5-C",
+      "1-C, 2-A, 5-B"
+    ],
+    "answer": 2,
+    "explanation": "1-B corresponds to 'QA'; 2-A is 'Testing'; 5-C is 'QC'."
+  },
+  {
+    "question": "The developer was assigned a story with acceptance criteria: 'The user must enter the date of birth before the website content is displayed. If the user is under 16 years old, a warning message should be displayed and the website content should not be displayed to the user.' The developer wrote the code and deployed it to the test environment. The next day, the developer was speaking aloud but said: 'A user under the age of 16 can access the content of the website by clicking on the 'X' cross icon button in the upper right corner of the blocking window.' Upon further investigation, it was discovered that the 'X' cross icon is present on the design that was provided to the developer. Which of the following statements is true?",
+    "choices": [
+      "The root cause is the 'X' cross icon on the designs given to the developer; the fault access of users under 16 years to the content of the website",
+      "The root cause is the conflicting requirements are given to the developer; the defect is the access of users under 16 years to the content of the website",
+      "The root cause is the conflicting requirements are given to the developer; the defect is the 'X' cross icon on the designs given to the developer",
+      "The root cause is the 'X' cross icon on the designs given to the developer; the failure is the access of users under 16 years to the content of the website"
+    ],
+    "answer": 1,
+    "explanation": "Conflicting requirements were given to the developer, resulting in a defect that allowed users under 16 years to access the website content."
+  },
+  {
+    "question": "Which test activity is the primary focus of the testing role?",
+    "choices": [
+      "Test planning",
+      "Test monitoring and control",
+      "Test design",
+      "Test completion"
+    ],
+    "answer": 2,
+    "explanation": "According to the ISTQB syllabus, the testing role is mainly focused on activities such as test analysis, test design, test implementation, and test execution."
+  },
+  {
+    "question": "Which test activity produces 'The set of conditions for officially starting and completing a defined task' as an output?",
+    "choices": [
+      "Test planning",
+      "Test analysis",
+      "Test design",
+      "Test implementation"
+    ],
+    "answer": 0,
+    "explanation": "This refers to the definition of 'Entry criteria' and 'Exit criteria,' which are part of the test planning activity."
+  },
+  {
+    "question": "Which of the following factors (i-v) have SIGNIFICANT influence on the test process? i. Strict adherence to hierarchy in the team ii. Availability of up-to-date security testing tools iii. Project time and budget iv. Testing team expectations v. The willingness to cooperate of the stakeholders",
+    "choices": [
+      "i, ii, iii have significant influence; iv, v have not",
+      "ii, iii, iv have significant influence; i, v have not",
+      "ii, iv, v have significant influence; i, iii have not",
+      "iii, iv, v have significant influence; i, ii have not"
+    ],
+    "answer": 3,
+    "explanation": "Project time and budget, testing team expectations, and stakeholder cooperation significantly influence the test process."
+  },
+  {
+    "question": "Given the following test tasks: 1. Creating manual and automated test scripts 2. Reprioritizing tests when an identified risk becomes an issue 3. Answers the question 'when to test?' in terms of measurable coverage criteria 4. Comparing the actual test results to the expected results 5. Defining product risks and project risks 6. Designing the test environment. And the following test activities: A. Test planning B. Test analysis C. Test design D. Test implementation. Which of the following BEST matches the tasks with the activities?",
+    "choices": [
+      "A-3, B-6, C-2, D-1",
+      "A-2, B-4, C-6, D-1",
+      "A-3, B-5, C-6, D-1",
+      "A-5, B-3, C-6, D-1"
+    ],
+    "answer": 3,
+    "explanation": "The correct mapping is A-5 (product risks), B-3 (when to test), C-6 (test environment), and D-1 (manual/automated scripts)."
+  },
+  {
+    "question": "Identify the statement that does NOT appropriately represent the advantages of traceability between the test basis and test work products:",
+    "choices": [
+      "Traceability between the test basis and testware allows the determination of which requirements are covered by test cases",
+      "Traceability between the test basis and testware is most effective when using experience-based techniques",
+      "Traceability between the test basis and testware allows the evaluation of the level of residual risk in a test object",
+      "Traceability between the test basis and testware supports coverage evaluation, making it very useful if measurable coverage criteria are defined in the test basis"
+    ],
+    "answer": 1,
+    "explanation": "Experience-based techniques are less structured and do not rely heavily on traceability, making this statement inappropriate as an advantage of traceability."
+  },
+  {
+    "question": "Project Name: Simple Calculator App. Entry Criteria: The app is fully developed and ready for testing, has passed an internal review, test environment and devices are available, test data is prepared, and criteria for release include executing all test cases, resolving all critical defects, and stability for two consecutive days without major issues. Which test activity produces this testware as an output?",
+    "choices": [
+      "Test analysis",
+      "Test planning",
+      "Test design",
+      "Test completion"
+    ],
+    "answer": 1,
+    "explanation": "The described criteria are part of test planning outputs, including entry and exit criteria for testing."
+  },
+  {
+    "question": "Match the following roles with the right testing tasks: 1. Test management role 2. Testing role. A. Identify any required infrastructure and tools B. Communicate the test completion report with the stakeholders C. Moderate the technical review of the test environment D. Check the setup of stubs, drivers, and simulators E. Enter change requests for open defect reports",
+    "choices": [
+      "1A, 1B, 1C, 1D, 2E",
+      "1B, 1E, 2A, 2C, 2D",
+      "1A, 1B, 1C, 2D, 2E",
+      "1A, 1B, 1C, 1D, 1E"
+    ],
+    "answer": 1,
+    "explanation": "The correct mapping is 1B (communicate report), 1E (enter change requests), 2A (identify tools), 2C (moderate review), and 2D (check stubs/drivers/simulators)."
+  },
+  {
+    "question": "Which of the following test tasks is part of the main test activity 'test planning' in the testing process?",
+    "choices": [
+      "Writing high-level test cases and checklists for more accurate estimates",
+      "Defining product and project risks, entry and exit criteria",
+      "Identifying coverage items, which serve as a guide to specify test case inputs",
+      "Defining the test data requirements, designing the test environment and identifying any other required infrastructure and tools"
+    ],
+    "answer": 1,
+    "explanation": "Test planning includes defining product and project risks along with entry and exit criteria for testing."
+  },
+  {
+    "question": "Which of the following BEST describes how value is added by maintaining traceability between the test basis and test artifacts?",
+    "choices": [
+      "Maintenance testing can be fully automated based on changes to the initial requirements",
+      "It is possible to determine if a new test case has increased coverage of the requirements",
+      "Test managers can identify which testers found the highest severity defects",
+      "Areas that may be impacted by side-effects of a change can be targeted by confirmation testing"
+    ],
+    "answer": 1,
+    "explanation": "Traceability allows determining if new tests cover previously uncovered requirements, directly showing increased coverage."
+  },
+  {
+    "question": "Which test activity is NOT the primary focus of the testing role?",
+    "choices": [
+      "Test monitoring and control",
+      "Test analysis",
+      "Test design",
+      "Test implementation"
+    ],
+    "answer": 0,
+    "explanation": "Test monitoring and control is a primary focus of the test management role, not the testing role."
+  },
+  {
+    "question": "Which of the following activities is part of the main activity 'test analysis' in the test process?",
+    "choices": [
+      "Identifying any required infrastructure and tools",
+      "Creating test suites from test scripts",
+      "Analyzing lessons learned for process improvement",
+      "Evaluating the test basis for testability"
+    ],
+    "answer": 3,
+    "explanation": "Evaluating the test basis for testability is a key activity in the 'test analysis' phase."
+  },
+  {
+    "question": "Which of the following test tasks is NOT part of the main test activity 'test analysis' in the testing process?",
+    "choices": [
+      "Analyzing the test basis to identify testable features",
+      "Analyzing the test basis to define and prioritize test conditions",
+      "Using test techniques to identify test conditions",
+      "Using test techniques to create test cases from test conditions and coverage items"
+    ],
+    "answer": 3,
+    "explanation": "Creating test cases belongs to the 'test design' phase, not 'test analysis'."
+  },
+  {
+    "question": "If you need to provide a report showing the level of residual risk in a test object, what do you need to track?",
+    "choices": [
+      "Traceability of test cases to requirements",
+      "Traceability of test results to risks",
+      "Traceability of test cases to defect reports",
+      "Traceability of test cases to risks"
+    ],
+    "answer": 1,
+    "explanation": "Residual risk assessment requires mapping test results to the identified risks to determine which risks remain."
+  },
+  {
+    "question": "Given the following test tasks:\n1. Assembling test cases into test suites\n2. Elaborating the test conditions into test cases and other testware\n3. Identifying testable features in the test basis\n4. Logging the test results\n5. Adding new resources when and where needed\n6. Formulating a test schedule\nAnd the following test activities:\nA. Test design\nB. Test planning\nC. Test monitoring and control\nD. Test analysis\nWhich of the following BEST matches the tasks with the activities?",
+    "choices": [
+      "A-1, B-6, C-5, D-2",
+      "A-3, B-6, C-5, D-2",
+      "A-2, B-6, C-5, D-3",
+      "A-1, B-6, C-4, D-3"
+    ],
+    "answer": 2,
+    "explanation": "The correct match is A-2, B-6, C-5, D-3 based on how each task aligns with the test activities."
+  },
+  {
+    "question": "Which of the following test tasks is NOT part of the main test activity 'test implementation' in the testing process?",
+    "choices": [
+      "Designing the test environment and identifying any other required infrastructure and tools",
+      "Organizing test cases into test procedures and test suites",
+      "Creating manual and automated test scripts",
+      "Building the test environment and verifying that it is set up correctly"
+    ],
+    "answer": 0,
+    "explanation": "Designing the test environment and identifying infrastructure/tools is part of test planning, not test implementation."
+  },
+  {
+    "question": "Match the following test activities and tasks (1-4) with the right test work products (A-D).\n1. Test planning\n2. Test analysis\n3. Test design\n4. Test implementation\nA. Test conditions\nB. Test procedures\nC. Risk register\nD. Coverage items",
+    "choices": [
+      "1A, 2C, 3D, 4B",
+      "1C, 2A, 3D, 4B",
+      "1C, 2D, 3A, 4B",
+      "1A, 2D, 3B, 4C"
+    ],
+    "answer": 1,
+    "explanation": "Correct mapping: 1C, 2A, 3D, 4B aligns each test activity with the correct work product."
+  },
+  {
+    "question": "Typical tasks performed during this, one of the main test activities of the test process, involve identifying and prioritizing test conditions, which can be supported with test techniques:",
+    "choices": [
+      "Acceptance criteria validation for testability",
+      "Test design",
+      "Test analysis",
+      "Backlog Grooming"
+    ],
+    "answer": 2,
+    "explanation": "Test analysis involves identifying and prioritizing test conditions, often using test techniques."
+  },
+  {
+    "question": "Consider the following testing activities:\n1. Selecting regression tests\n2. Evaluating completeness of test execution\n3. Identifying which user stories have open defect reports\n4. Evaluating whether the number of tests for each requirement is consistent with the level of product risk\nConsider the following ways traceability can help testing:\nA. Improve understandability of test status reports to include status of test basis items\nB. Make testing auditable\nC. Provide information to assess process quality\nD. Analyze the impact of changes\nWhich of the following BEST matches the testing activity with how traceability can assist that activity?",
+    "choices": [
+      "1D, 2B, 3C, 4A",
+      "1B, 2D, 3A, 4C",
+      "1D, 2C, 3A, 4B",
+      "1D, 2B, 3A, 4C"
+    ],
+    "answer": 3,
+    "explanation": "Traceability assists with: 1D (Selecting regression tests → analyzing the impact of changes), 2B (Evaluating completeness of test execution → making testing auditable), 3A (Identifying which user stories have open defect reports → improving understandability of reports), 4C (Evaluating test coverage vs. risk → providing information to assess process quality)."
+  },
+  {
+    "question": "Which of the following factors (i-v) have SIGNIFICANT influence on the test process?\n i. The software type and product architecture\n ii. Skills, knowledge, and level of experience of testing team members\n iii. Availability of funds on the project credit card for running automated tests in the production environment\n iv. The average level of experience in testing among the stakeholders\n v. The number of lines of code in the product under test",
+    "choices": [
+      "i, ii have significant influence; iii, iv, v have not",
+      "i, iii, iv have significant influence; ii, v have not",
+      "ii, iv, v have significant influence; i, iii have not",
+      "iii, v have significant influence; i, ii, iv have not"
+    ],
+    "answer": 0,
+    "explanation": "Only i and ii have significant influence on the test process; iii, iv, and v do not."
+  },
+  {
+    "question": "Which of the following test tasks is NOT part of the main test activity 'test planning' in the testing process?",
+    "choices": [
+      "Defining the test objectives",
+      "Selecting the test approach",
+      "Evaluating the test basis and test items to identify defects",
+      "Formulating a test schedule"
+    ],
+    "answer": 2,
+    "explanation": "Evaluating the test basis and test items to identify defects is part of 'test analysis', not 'test planning'."
+  },
+  {
+    "question": "Given the following test activities and tasks:\nA. Test design\nB. Test implementation\nC. Test execution\nD. Test completion\n1. Entering change requests for open defect reports\n2. Identifying test data to support the test cases\n3. Prioritizing test procedures and creating test data\n4. Analyzing discrepancies to determine their cause\nWhich of the following BEST matches the activities with the tasks?",
+    "choices": [
+      "A-2, B-3, C-4, D-1",
+      "A-2, B-1, C-3, D-4",
+      "A-3, B-2, C-4, D-1",
+      "A-3, B-2, C-1, D-4"
+    ],
+    "answer": 0,
+    "explanation": "The correct mapping is A-2 (Test design → Identifying test data), B-3 (Test implementation → Prioritizing test procedures), C-4 (Test execution → Analyzing discrepancies), D-1 (Test completion → Entering change requests)."
+  },
+  {
+    "question": "Which of the following is an advantage of the whole team approach?",
+    "choices": [
+      "Writing unit tests is now the responsibility of the testing team instead of the development team",
+      "Developers and testers work more effectively by defining clear separate roles and responsibilities",
+      "To support close collaboration, Agile teams are generally co-located",
+      "Business representatives help testers to write manual test cases, and testers are responsible for test automation"
+    ],
+    "answer": 2,
+    "explanation": "Agile teams are often co-located to support close collaboration, enabling quicker communication and problem resolution."
+  },
+  {
+    "question": "Why is independent testing important?",
+    "choices": [
+      "Independent testing is usually cheaper than testing your own work",
+      "Independent testers are likely to recognize different kinds of failures and defects compared to developers who wrote the code",
+      "Independent testers excel in determining the processes and methodologies employed",
+      "Independent testers are dispassionate about whether the project succeeds or fails"
+    ],
+    "answer": 1,
+    "explanation": "Independent testers bring a fresh perspective and can detect failures that the original developers may overlook."
+  },
+  {
+    "question": "Which of the following statements is false regarding the importance of communication skills for testers?",
+    "choices": [
+      "Testers, as bearers of bad news, often experience the common human tendency to place blame on the messenger",
+      "Confirmation bias can make it challenging for developers to accept information that contradicts their current beliefs about how the software product works",
+      "Testers should always maintain a skeptical mindset towards the software product, actively criticizing its quality, as this approach enhances collaboration and encourages team members to perform better",
+      "Despite its substantial contributions to project success and product quality, some team members may perceive testing as a destructive activity"
+    ],
+    "answer": 2,
+    "explanation": "Maintaining a skeptical mindset should not mean constant criticism; instead, communication should be constructive to foster collaboration."
+  },
+  {
+    "question": "Which of the following is an advantage of having the whole team responsible for quality?",
+    "choices": [
+      "Companies no longer need to recruit and train software testing specialists",
+      "Test automation tasks are now the responsibility of the development team instead of the test team",
+      "Role barriers are eliminated and team members contribute to project success based on their unique skills and perspectives",
+      "Project costs are lower because the need for a specialized test team is eliminated"
+    ],
+    "answer": 2,
+    "explanation": "When the whole team is responsible for quality, role barriers are removed, enabling a variety of skillsets to be applied as needed for project success."
+  },
+  {
+    "question": "Which of the following BEST explains a benefit of independent testing?",
+    "choices": [
+      "The testing team outside the organization can take full responsibility for delivering a high-quality product",
+      "By engaging with the development team to clarify unclear and incomplete requirements, the independent testing team can effectively pinpoint any contradictions between the requirements and the implementation",
+      "An independent test team, unlike a development team, is not under pressure to deliver timelines, so they find defects more effectively",
+      "Communication between the independent test team and developers is more formalized and happens in the management system, thanks to which a lot of time is saved, compared to unnecessary and redundant communication within the company"
+    ],
+    "answer": 1,
+    "explanation": "Independent testers can challenge assumptions and identify inconsistencies between requirements and the actual system by engaging with the development team."
+  },
+  {
+    "question": "The tester, who was assigned to test the user story about filtering real estate sales agents, previously worked as a real estate sales agent before changing their specialty. Which of the following skills will MOST LIKELY help the tester to test the user story effectively?",
+    "choices": [
+      "Testing knowledge",
+      "Technical knowledge",
+      "Domain knowledge",
+      "Programming knowledge"
+    ],
+    "answer": 2,
+    "explanation": "The tester's domain knowledge in real estate will help them better understand the requirements and identify relevant test scenarios."
+  },
+  [
     {
-        "question": "What is the main purpose of regression testing?",
-        "choices": [
-            "To test new functionality",
-            "To check if changes broke existing features",
-            "To find performance bottlenecks",
-            "To check UI consistency"
-        ],
-        "answer": 1,
-        "explanation": "Regression testing ensures that existing features still work after changes."
+      "question": "Which of the following is an advantage of the whole team approach?",
+      "options": {
+        "a": "Writing unit tests is now the responsibility of the testing team instead of the development team",
+        "b": "Developers and testers work more effectively by defining clear separate roles and responsibilities",
+        "c": "To support close collaboration, Agile teams are generally co-located",
+        "d": "Business representatives help testers to write manual test cases, and testers are responsible for test automation"
+      },
+      "correct_answer": "c",
+      "explanation": "To support close collaboration, Agile teams are generally co-located."
     },
     {
-        "question": "Which of the following is NOT a level of testing?",
-        "choices": [
-            "Unit testing",
-            "System testing",
-            "Integration testing",
-            "Module planning"
-        ],
-        "answer": 3,
-        "explanation": null
+      "question": "Why is independent testing important?",
+      "options": {
+        "a": "Independent testing is usually cheaper than testing your own work",
+        "b": "Independent testers are likely to recognize different kinds of failures and defects compared to developers who wrote the code",
+        "c": "Independent testers excel in determining the processes and methodologies employed",
+        "d": "Independent testers are dispassionate about whether the project succeeds or fails"
+      },
+      "correct_answer": "b",
+      "explanation": "Independent testers are likely to recognize different kinds of failures and defects compared to developers who wrote the code."
+    },
+    {
+      "question": "Which of the following is an advantage of having the whole team responsible for quality?",
+      "options": {
+        "a": "Companies no longer need to recruit and train software testing specialists",
+        "b": "Test automation tasks are now the responsibility of the development team instead of the test team",
+        "c": "Role barriers are eliminated and team members contribute to project success based on their unique skills and perspectives",
+        "d": "Project costs are lower because the need for a specialized test team is eliminated"
+      },
+      "correct_answer": "c",
+      "explanation": "Role barriers are eliminated and team members contribute to project success based on their unique skills and perspectives."
+    },
+    {
+      "question": "Which of the following BEST explains a benefit of independent testing?",
+      "options": {
+        "a": "The testing team outside the organization can take full responsibility for delivering a high-quality product",
+        "b": "By engaging with the development team to clarify unclear and incomplete requirements, the independent testing team can effectively pinpoint any contradictions between the requirements and the implementation",
+        "c": "An independent test team, unlike a development team, is not under pressure to deliver timelines, so they find defects more effectively",
+        "d": "Communication between the independent test team and developers is more formalized and happens in the management system, saving time compared to unnecessary and redundant communication within the company"
+      },
+      "correct_answer": "b",
+      "explanation": "By engaging with the development team to clarify unclear and incomplete requirements, the independent testing team can effectively pinpoint contradictions between requirements and implementation."
+    },
+    {
+      "question": "Which of the following skills will MOST LIKELY help the tester to test the user story effectively?",
+      "options": {
+        "a": "Testing knowledge",
+        "b": "Technical knowledge",
+        "c": "Domain knowledge",
+        "d": "Programming knowledge"
+      },
+      "correct_answer": "c",
+      "explanation": "Domain knowledge will help the tester effectively test the user story."
+    },
+    {
+      "question": "Which of the following statements is false regarding the importance of communication skills for testers?",
+      "options": {
+        "a": "Testers, as bearers of bad news, often experience the common human tendency to place blame on the messenger",
+        "b": "Confirmation bias can make it challenging for developers to accept information that contradicts their current beliefs about how the software product should work",
+        "c": "Testers should always maintain a skeptical mindset towards the software product, actively criticizing its quality, as this approach enhances collaboration and encourages team members to perform better",
+        "d": "Despite its substantial contributions to project success and product quality, some team members may perceive testing as a destructive activity"
+      },
+      "correct_answer": "c",
+      "explanation": "Testers should always maintain a skeptical mindset towards the software product, actively criticizing its quality, as this approach enhances collaboration and encourages team members to perform better."
+    },
+    {
+      "question": "Out of the following which activities are not consistent with Agile's 'Whole Team Approach'?",
+      "options": {
+        "a": "The team members share the same workspace",
+        "b": "Product owner, testers, and developers define the final user story acceptance criteria",
+        "c": "The whole team approach enhances collaboration within the team by allowing the various skill sets within the team to be leveraged for the benefit of the project",
+        "d": "The Whole Team Approach improves dynamics, enhances communication, and collaboration between the development team and independent testing team"
+      },
+      "correct_answer": "d",
+      "explanation": "The Whole Team Approach improves dynamics, enhances communication, and collaboration between the development team and independent testing team."
+    },
+    {
+      "question": "Which of the following BEST explains a drawback of independent testing?",
+      "options": {
+        "a": "Independent testers may receive unnecessary access to valuable internal information",
+        "b": "While independent testing is cost-effective, it comes with the significant risk of causing release delays",
+        "c": "Developers may lose a sense of personal responsibility for quality",
+        "d": "Testers from outside the organization may experience a decline in their sense of responsibility for quality"
+      },
+      "correct_answer": "c",
+      "explanation": "Developers may lose a sense of personal responsibility for quality."
+    },
+    {
+      "question": "A typical generic skill required for the role of a tester is the ability to:",
+      "options": {
+        "a": "Knowledge of various programming languages to perform diagnosis and be more efficient in finding causes of failures",
+        "b": "Knowledge in test automation to save time by reducing repetitive manual work",
+        "c": "Be able to hold various meetings, sprint planning, retrospectives and necessarily be the presenter of the sprint review",
+        "d": "Provide business solutions regarding features, based on their experience and knowledge"
+      },
+      "correct_answer": "b",
+      "explanation": "Knowledge in test automation to save time by reducing repetitive manual work."
+    },
+    {
+      "question": "Which of the following BEST explains the benefit of independent testing?",
+      "options": {
+        "a": "Isolating testers from the development team can enhance their effectiveness by requiring them to acquire knowledge about the software product from an end-user perspective",
+        "b": "Independent testers facilitate the transfer of testing knowledge to other team members by organizing multiple meetings, thereby enhancing the speed of delivering working software to end users",
+        "c": "Testers working independently can create unit tests for developers, allowing developers more time to focus on building new features",
+        "d": "The varied backgrounds, technical viewpoints, and biases of independent testers make them likely to recognize different failures and defects compared to developers"
+      },
+      "correct_answer": "d",
+      "explanation": "The varied backgrounds, technical viewpoints, and biases of independent testers make them likely to recognize different failures and defects compared to developers."
+    },
+    {
+      "question": "Which of the following is an advantage of the whole team approach?",
+      "options": {
+        "a": "It enhances collaboration within the team by using the Agile board, making it visible which team members are taking an unsatisfactory amount of time to complete their tasks",
+        "b": "It improves team dynamics, enhances communication, and collaboration within the team",
+        "c": "It makes quality everyone's responsibility, as the whole team is a part of the test design activity and requires training in test design techniques",
+        "d": "It makes quality everyone's responsibility by clearly defining the limits of each team member's responsibilities"
+      },
+      "correct_answer": "b",
+      "explanation": "It improves team dynamics, enhances communication, and collaboration within the team."
+    },
+    {
+      "question": "What is the primary advantage of independent testing?",
+      "options": {
+        "a": "It is less expensive",
+        "b": "It is performed by the person who wrote the code",
+        "c": "It identifies defects that might be missed by the person who wrote the code",
+        "d": "It eliminates the need for a separate QA team"
+      },
+      "correct_answer": "c",
+      "explanation": "It identifies defects that might be missed by the person who wrote the code."
+    },
+    {
+      "question": "Which approach should testers take when communicating defects to avoid being perceived as criticizing the product or its author?",
+      "options": {
+        "a": "Presenting defects alongside personal critiques of the development team",
+        "b": "Sharing test results informally without documentation to avoid official records",
+        "c": "Only reporting defects that have been fixed to avoid negative feedback",
+        "d": "Focusing communication on the defect itself, not the individual"
+      },
+      "correct_answer": "d",
+      "explanation": "Focusing communication on the defect itself, not the individual."
+    },
+    {
+      "question": "What is one of the main reasons for having independent testing?",
+      "options": [
+        "a",
+        ":",
+        "To reduce the time spent on testing",
+        "b",
+        ":",
+        "To allow developers to also do testing",
+        "c",
+        ":",
+        "To challenge assumptions made by stakeholders",
+        "d",
+        ":",
+        "To eliminate the need for a separate testing phase"
+      ],
+      "correct_answer": "c",
+      "explanation": "To challenge assumptions made by stakeholders. Independent testers are likely to recognize different kinds of failures and defects compared to developers because of their different backgrounds, technical perspectives, and biases. They can verify, challenge, or disprove assumptions made during specification and implementation."
     }
+  ]
 ]
