@@ -9,6 +9,21 @@ body {
     align-items: center;
 }
 
+/* Spinner styling */
+#spinner {
+    position: fixed;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fffbe6;
+    color: #333;
+    padding: 12px 30px;
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
 /* Timer styling */
 .timer {
     font-size: 22px;
@@ -37,12 +52,67 @@ body {
     100% { box-shadow: 0 0 5px #ffcc00; }
 }
 
+/* Navigator styling */
+#navigator {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 90px;
+    margin-bottom: 10px;
+}
+
+.nav-btn {
+    background: #eee;
+    color: #333;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+    outline: none;
+}
+
+.nav-btn.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    font-weight: bold;
+}
+
+.nav-btn.answered {
+    background: #d4edda;
+    border-color: #28a745;
+}
+
+.nav-btn.skipped {
+    background: #ffeeba;
+    border-color: #ffc107;
+}
+
+.nav-btn:hover,
+.nav-btn:focus {
+    background: #cce5ff;
+    border-color: #0056b3;
+}
+
+/* Summary styling */
+#summary {
+    margin: 10px 0 0 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Question container */
 .question-container {
     background: #f9f9f9;
     padding: 25px;
     border-radius: 15px;
-    margin-top: 100px;
+    margin-top: 20px;
     width: 80%;
     max-width: 800px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
@@ -64,10 +134,13 @@ body {
     background: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
+    outline: none;
 }
 
-.choice:hover {
+.choice:hover,
+.choice:focus {
     background: #f0f0f0;
+    border-color: #007bff;
 }
 
 .choice.correct {
@@ -114,9 +187,11 @@ button {
     cursor: pointer;
     border-radius: 5px;
     transition: 0.3s ease;
+    outline: none;
 }
 
-button:hover {
+button:hover,
+button:focus {
     background: #0056b3;
 }
 

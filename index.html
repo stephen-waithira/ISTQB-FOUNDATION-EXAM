@@ -3,24 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>ISTQB Foundation Level Practice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="timer" id="timer">
-        <span class="timer-icon">⏳</span>
+    <!-- Loading Spinner -->
+    <div id="spinner" style="display:none;" aria-live="polite" aria-busy="true">Loading...</div>
+
+    <!-- Timer -->
+    <div class="timer" id="timer" aria-label="Quiz Timer">
+        <span class="timer-icon" aria-hidden="true">⏳</span>
         <span id="time-text">01:30:00</span>
     </div>
 
-    <div class="question-container">
+    <!-- Question Navigator -->
+    <nav id="navigator" class="navigator" aria-label="Question Navigator"></nav>
+    <div id="summary" class="summary" aria-live="polite"></div>
+
+    <!-- Question & Choices -->
+    <main class="question-container" aria-labelledby="question-text">
         <h2 id="question-text"></h2>
         <div id="choices-container"></div>
         <p id="explanation" class="hidden"></p>
-    </div>
+    </main>
 
+    <!-- Navigation Buttons -->
     <div class="nav-buttons">
-        <button id="prev-btn">Previous</button>
-        <button id="skip-btn">Skip</button>
-        <button id="next-btn">Next</button>
+        <button id="prev-btn" type="button" aria-label="Previous Question">Previous</button>
+        <button id="skip-btn" type="button" aria-label="Skip Question">Skip</button>
+        <button id="next-btn" type="button" aria-label="Next Question">Next</button>
     </div>
 
     <script src="script.js"></script>
